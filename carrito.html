@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="js/carrito.js"></script>
 
 </head>
+
 <body>
-    
+    <div class="container">
+    <section class="col-12">
+        <h2>Listado de Productos</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Coctel</th>
+              <th scope="col">Cant</th>
+            </tr>
+          </thead>
+          <tbody id="listado">
+            <tr>
+              <th scope="row">1</th>
+              <td>Margarita</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Blue Margarita</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Tommys Margarita</td>
+              <td>20.000</td>
+            </tr>
+           </tbody>
+           <p class="text-right">Total: 60.000 <span id="total"></span>&dollar;;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </table>
+    </section>
+</div>
 </body>
+
 </html>
